@@ -22,7 +22,7 @@ from sksurv.linear_model import CoxPHSurvivalAnalysis
 import pickle
 
 def load_data():
-    df = pd.read_csv(r'C:\Users\ming\Desktop\python_work\app\dataset_da_2017.csv', encoding='utf-8')
+    df = pd.read_csv(r'dataset_da_2017.csv', encoding='utf-8')
     columns_to_drop = ['Patient ID', 'Year of diagnosis', 'Survival months flag']
     df = df.drop(columns=columns_to_drop)
     df.replace("Unknown", np.nan, inplace=True)
