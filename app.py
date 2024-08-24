@@ -47,9 +47,9 @@ summary_stage_mapping = {'Localized': 0, 'Regional': 1, 'Distant': 2}
 
 # Function to load the preprocessed data
 def load_preprocessed_data():
-    with open(r'C:\Users\ming\Desktop\python_work\app\x_train_df.pkl', 'rb') as f:
+    with open(r'x_train_df.pkl', 'rb') as f:
         x_train_df = pickle.load(f)
-    with open(r'C:\Users\ming\Desktop\python_work\app\x_test_df.pkl', 'rb') as f:
+    with open(r'x_test_df.pkl', 'rb') as f:
         x_test_df = pickle.load(f)
     return x_train_df, x_test_df
 
