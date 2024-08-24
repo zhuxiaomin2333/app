@@ -212,19 +212,19 @@ model_choice = st.sidebar.selectbox('Choose Model', options=['Cox Proportional H
 predict_button = st.sidebar.button('Predict')
 
 # Load the models
-with open(r'C:\Users\ming\Desktop\python_work\app\coxph_model.pkl', 'rb') as f:
+with open(r'coxph_model.pkl', 'rb') as f:
     coxph = pickle.load(f)
 
-with open(r'C:\Users\ming\Desktop\python_work\app\rsf_model.pkl', 'rb') as f:
+with open(r'rsf_model.pkl', 'rb') as f:
     rsf = pickle.load(f)
 
-with open(r'C:\Users\ming\Desktop\python_work\app\gbm_model.pkl', 'rb') as f:
+with open(r'gbm_model.pkl', 'rb') as f:
     gbm = pickle.load(f)
 
-with open(r'C:\Users\ming\Desktop\python_work\app\tree_model.pkl', 'rb') as f:
+with open(r'tree_model.pkl', 'rb') as f:
     tree = pickle.load(f)
 
-with open(r'C:\Users\ming\Desktop\python_work\app\stacking_model.pkl', 'rb') as f:
+with open(r'stacking_model.pkl', 'rb') as f:
     stacking_model = pickle.load(f)
 
 # Use the loaded models to predict
